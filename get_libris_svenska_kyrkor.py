@@ -17,7 +17,7 @@ from dataclasses import dataclass
 @dataclass
 class libris_item:
     librisID: str
-    title: str
+    title: str 
     samlaID: str = ""
 
 
