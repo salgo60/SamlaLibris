@@ -84,7 +84,7 @@ for search in searchURLs:
                 pass
             finally:
                 pass
-#print(libris_svenska_kyrkan)
+
 with open("svenskakyrkor.csv", 'w',encoding='UTF-8') as myfile:
     wr = csv.writer(myfile, quoting=csv.QUOTE_ALL,)
     i = 0
