@@ -17,7 +17,7 @@ from dataclasses import dataclass
 @dataclass
 class libris_item:
     librisID: str
-    title: str 
+    title: str
     samlaID: str = ""
 
 
@@ -29,19 +29,16 @@ searchURLs={'http://libris.kb.se/xsearch?query=ZSER:(Sveriges%20kyrkor)&format=j
 
 
 def in_samla(item):
-    #print ("Item = ",item)
     for libris_url in item["free"]:
         if (str(libris_url).lower(),str(libris_url).find("raa")):
             return True
-        #print("\trad : ", type(libris_url), libris_url)
     return False
 
 def samla_id(item):
     for libris_url in item["free"]:
-#        print("Samla_id",libris_url)
-        if (str(libris_url).lower(), str(libris_url).find("raa/samla/html")):
+       if (str(libris_url).lower(), str(libris_url).find("raa/samla/html")):
             return str(libris_url).replace('http://kulturarvsdata.se/raa/samla/html/','')
-    return "33"
+    return
 
 libris_svenska_kyrkan: List[libris_item] = []
 
@@ -61,7 +58,7 @@ def get_LIBRISidentifier(item):
 
 
 def clean_title(item):
-    cleanTitle = str(item["title"]).replace(" [Elektronisk resurs]","").encode()
+    cleanTitle = str(item["title"]).replace(" [Elektronisk resurs]","")
     return cleanTitle
 
 
@@ -88,12 +85,12 @@ for search in searchURLs:
             finally:
                 pass
 #print(libris_svenska_kyrkan)
-with open("svenskakyrkor.csv", 'w') as myfile:
-    wr = csv.writer(myfile, quoting=csv.QUOTE_ALL)
+with open("svenskakyrkor.csv", 'w',encoding='UTF-8') as myfile:
+    wr = csv.writer(myfile, quoting=csv.QUOTE_ALL,)
     i = 0
     for i in  range(len(libris_svenska_kyrkan)):
         wr.writerow([libris_svenska_kyrkan[i].librisID,
                      libris_svenska_kyrkan[i].samlaID,
                      libris_svenska_kyrkan[i].title])
-    print ("LIBRIS item found with SAMLA = ",i)
-    logger.info("LIBRIS item found with SAMLA = %s", i)
+    print ("LIBRIS item found with SAMLA = ",i+1)
+    logger.info("LIBRIS item found with SAMLA = %s", i+1)
