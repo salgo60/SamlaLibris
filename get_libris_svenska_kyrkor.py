@@ -7,90 +7,58 @@
 
 """
 import datetime
-import urllib.request,json
 import csv
 from typing import List
 import logging
+from get_libris import LibrisItem
+import get_libris
+import get_UGC
 
-from dataclasses import dataclass
-
-@dataclass
-class libris_item:
-    librisID: str
-    title: str
-    samlaID: str = ""
+__version__ = "1.0.0"
 
 
+def main():
+    libris_svenska_kyrkan: List[LibrisItem] = []  # Contains LIBRIS items
+    nrWikipediaRef = 0  # Number references to Wikipeda
 
-searchURLs={'http://libris.kb.se/xsearch?query=ZSER:(Sveriges%20kyrkor)&format=json&n=200',
-        'http://libris.kb.se/xsearch?query=ZSER:(Sveriges%20kyrkor)&format=json&n=200&start=201',
-        'http://libris.kb.se/xsearch?query=ZSER:(Sveriges%20kyrkor)&format=json&n=200&start=401',
-        'http://libris.kb.se/xsearch?query=ZSER:(Sveriges%20kyrkor)&format=json&n=200&start=601'}
+    # Create logger
+    today = str(datetime.date.today())
+    LOG_FORMAT: str = "%(asctime)s - %(levelname)s - %(filename)s - %(funcName)s - %(message)s"
+    logging.basicConfig(filename="log/get_libris_svenska_kyrkor" + today + ".log",
+                    level=logging.INFO,
+                    format=LOG_FORMAT)
 
+    logger = logging.getLogger()
 
-def in_samla(item):
-    for libris_url in item["free"]:
-        if (str(libris_url).lower(),str(libris_url).find("raa")):
-            return True
-    return False
+    # Add terminal logging
+    logging.getLogger().addHandler(logging.StreamHandler())
+    logger.info("Version %s",__version__)
 
-def samla_id(item):
-    for libris_url in item["free"]:
-       if (str(libris_url).lower(), str(libris_url).find("raa/samla/html")):
-            return str(libris_url).replace('http://kulturarvsdata.se/raa/samla/html/','')
-    return
+    logger.info("Start query LIBRIS")
+    get_libris.get_LIBRIS_svenska_kyrka(libris_svenska_kyrkan)
 
-libris_svenska_kyrkan: List[libris_item] = []
-
-#Create logger
-today = str(datetime.date.today())
-LOG_FORMAT: str = " %(asctime)s - %(message)s"
-logging.basicConfig(filename="log/get_libris_svenska_kyrkor" + today +".log",
-                    level = logging.DEBUG,
-                    format = LOG_FORMAT)
-
-logger = logging.getLogger()
-logger.info("Start ")
-
-
-def get_LIBRISidentifier(item):
-    return item["identifier"].replace("http://libris.kb.se/bib/","")
-
-
-def clean_title(item):
-    cleanTitle = str(item["title"]).replace(" [Elektronisk resurs]","")
-    return cleanTitle
+    csv_filename = "svenskakyrkor.csv"
+    with open(csv_filename, 'w', encoding='UTF-8') as myfile:
+        wr = csv.writer(myfile, quoting=csv.QUOTE_ALL, )
+        i = 0
+        for i in range(len(libris_svenska_kyrkan)):
+            wr.writerow([libris_svenska_kyrkan[i].librisID,
+                        libris_svenska_kyrkan[i].title,
+                        libris_svenska_kyrkan[i].yearPublished,
+                        libris_svenska_kyrkan[i].ISBN,
+                        libris_svenska_kyrkan[i].publisher,
+                        libris_svenska_kyrkan[i].creator,
+                        libris_svenska_kyrkan[i].samlaID,
+                        libris_svenska_kyrkan[i].relation
+                         ])
 
 
+        logger.info("CSV file %s created with LIBRIS/Samla = %s", csv_filename, i + 1)
 
-for search in searchURLs:
-    print ("Search ",search)
-    logger.info("Search: %s", search)
-    with urllib.request.urlopen(search) as url:
-        data = json.loads(url.read().decode())
-        for item in data["xsearch"]["list"]:
-            try:
-                if 'free' not in item:
-                    raise ValueError("No Free resource")
-                #print  (str(item["free"][0]))
-                if in_samla(item):
-                    libris_svenska_kyrkan.append(
-                        libris_item(get_LIBRISidentifier(item),
-                        clean_title(item),
-                        samla_id(item)))
+        get_UGC.check_UGC(libris_svenska_kyrkan)
 
-            except ValueError:
-                logger.warning("ValueError: %s", item)
-                pass
-            finally:
-                pass
+        get_UGC.getRelationTypes()  # to get a better understanding of the Data in UGC
 
-with open("svenskakyrkor.csv", 'w',encoding='UTF-8') as myfile:
-    wr = csv.writer(myfile, quoting=csv.QUOTE_ALL,)
-    i = 0
-    for i in  range(len(libris_svenska_kyrkan)):
-        wr.writerow([libris_svenska_kyrkan[i].librisID,
-                     libris_svenska_kyrkan[i].samlaID,
-                     libris_svenska_kyrkan[i].title])
-    print ("LIBRIS item found with SAMLA = ",i+1)
-    logger.info("LIBRIS item found with SAMLA = %s", i+1)
+
+if __name__== "__main__":
+  main()
