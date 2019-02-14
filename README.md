@@ -11,6 +11,7 @@ Access LIBRIS and search for Svenska Kyrkor and extract items available from RAÃ
 
  2-1) Upload to Wikidata --> SAMLA books one object references fro WD chucrobject using
 
+Start: Python [get_libris_svenska_kyrkor.py](https://github.com/salgo60/SamlaLibris/blob/master/get_libris_svenska_kyrkor.py)
 
 ### Links
 
