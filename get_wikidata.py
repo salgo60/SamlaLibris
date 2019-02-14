@@ -23,7 +23,6 @@ def get_WD(wikipedia_url):
         return wikidata.id
     except:
         logger.exception("Exception wikipedia %s", wikipedia_url)
-        pass
     finally:
         pass
     return

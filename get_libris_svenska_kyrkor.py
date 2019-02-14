@@ -14,25 +14,24 @@ from get_libris import LibrisItem
 import get_libris
 import get_UGC
 
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 
 
 def main():
     libris_svenska_kyrkan: List[LibrisItem] = []  # Contains LIBRIS items
-    nrWikipediaRef = 0  # Number references to Wikipeda
 
     # Create logger
     today = str(datetime.date.today())
     LOG_FORMAT: str = "%(asctime)s - %(levelname)s - %(filename)s - %(funcName)s - %(message)s"
     logging.basicConfig(filename="log/get_libris_svenska_kyrkor" + today + ".log",
-                    level=logging.INFO,
-                    format=LOG_FORMAT)
+                        level=logging.INFO,
+                        format=LOG_FORMAT)
 
     logger = logging.getLogger()
 
     # Add terminal logging
     logging.getLogger().addHandler(logging.StreamHandler())
-    logger.info("Version %s",__version__)
+    logger.info("Version %s", __version__)
 
     logger.info("Start query LIBRIS")
     get_libris.get_LIBRIS_svenska_kyrka(libris_svenska_kyrkan)
@@ -43,22 +42,21 @@ def main():
         i = 0
         for i in range(len(libris_svenska_kyrkan)):
             wr.writerow([libris_svenska_kyrkan[i].librisID,
-                        libris_svenska_kyrkan[i].title,
-                        libris_svenska_kyrkan[i].yearPublished,
-                        libris_svenska_kyrkan[i].ISBN,
-                        libris_svenska_kyrkan[i].publisher,
-                        libris_svenska_kyrkan[i].creator,
-                        libris_svenska_kyrkan[i].samlaID,
-                        libris_svenska_kyrkan[i].relation
+                         libris_svenska_kyrkan[i].title,
+                         libris_svenska_kyrkan[i].yearPublished,
+                         libris_svenska_kyrkan[i].ISBN,
+                         libris_svenska_kyrkan[i].publisher,
+                         libris_svenska_kyrkan[i].creator,
+                         libris_svenska_kyrkan[i].samlaID,
+                         libris_svenska_kyrkan[i].relation
                          ])
 
+    logger.info("CSV file %s created with LIBRIS/Samla = %s", csv_filename, i + 1)
 
-        logger.info("CSV file %s created with LIBRIS/Samla = %s", csv_filename, i + 1)
+    get_UGC.check_UGC(libris_svenska_kyrkan)
 
-        get_UGC.check_UGC(libris_svenska_kyrkan)
-
-        get_UGC.getRelationTypes()  # to get a better understanding of the Data in UGC
+    get_UGC.getRelationTypes()  # to get a better understanding of the Data in UGC
 
 
-if __name__== "__main__":
-  main()
+if __name__ == "__main__":
+    main()
