@@ -16,7 +16,7 @@ Access LIBRIS and search for Svenska Kyrkor and extract items available from RA�
 * produce [svenskakyrkor.csv](https://github.com/salgo60/SamlaLibris/blob/master/svenskakyrkor.csv) and [samlaWikidata.csv](https://github.com/salgo60/SamlaLibris/blob/master/samlaWikidata.csv)
 
 ### Wikidata (test)
-* Wikidata objekt [Q61723424](https://www.wikidata.org/wiki/Q61723424) is RAÄ Samla [6880](http://samla.raa.se/xmlui/handle/raa/6880) - [What liks here](https://www.wikidata.org/wiki/Special:WhatLinksHere/Q61723424)
+* Wikidata objekt [Q61723424](https://www.wikidata.org/wiki/Q61723424) is RAÄ Samla [6880](http://samla.raa.se/xmlui/handle/raa/6880) - [What links here](https://www.wikidata.org/wiki/Special:WhatLinksHere/Q61723424)
 
 ### Links
 
