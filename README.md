@@ -12,11 +12,12 @@ Access LIBRIS and search for Svenska Kyrkor and extract items available from RAÃ
  2-1) Upload to Wikidata --> SAMLA books will be one object with references from the WD church object
 
 # Usage
-Python [get_libris_svenska_kyrkor.py](https://github.com/salgo60/SamlaLibris/blob/master/get_libris_svenska_kyrkor.py) --> [log](https://github.com/salgo60/SamlaLibris/blob/master/log/get_libris_svenska_kyrkor2019-02-13.log)
+Python [get_libris_svenska_kyrkor.py](https://github.com/salgo60/SamlaLibris/blob/master/get_libris_svenska_kyrkor.py) --> [log](https://github.com/salgo60/SamlaLibris/tree/master/log)
 * Output
  * [svenskakyrkor.csv](https://github.com/salgo60/SamlaLibris/blob/master/svenskakyrkor.csv)
    * contains LIBRIS information looks like the JSON doesnt contain page information see [unanswered question](https://kundo.se/org/librisxl/d/soka-fram-alla-kopplade-till-samlaraa-i-libris-xl/#c3195511)
  * [samlaWikidata.csv](https://github.com/salgo60/SamlaLibris/blob/master/samlaWikidata.csv)
+   * contains UGC relations Samla <-> Wikidata
 
 # Wikidata (test)
 * Wikidata objekt [Q61723424](https://www.wikidata.org/wiki/Q61723424) is RAÃ„ Samla [6880](http://samla.raa.se/xmlui/handle/raa/6880) - see also [What links here](https://www.wikidata.org/wiki/Special:WhatLinksHere/Q61723424)
