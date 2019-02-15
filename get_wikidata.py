@@ -8,7 +8,7 @@ logger = logging.getLogger(__name__)
 def get_WD(wikipedia_url):
     """ get WD object from swedish wikipedia URL
 
-    user account/pwd is defined i  user-config.py like below user xxxx pwd yyy
+        user account/pwd is defined i  user-config.py like below user xxxx pwd yyy
         usernames['xxxx']['yyy'] = u'ExampleBot'
     """
     try:
