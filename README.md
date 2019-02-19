@@ -17,7 +17,7 @@ Access LIBRIS and search for Svenska Kyrkor and extract items available from RAÃ
 
  2) **Next step** use [Open Refine](https://www.wikidata.org/wiki/Wikidata:Tools/OpenRefine) to Match items in Wikidata to find Objects for authors etc.. and upload to Wikidata
 
- 2-1) Upload to Wikidata --> SAMLA books will be one object with references from the WD church object
+ 2-1) Upload to Wikidata --> SAMLA books will be one object with references from the WD church object and same as with the authors of the books
 
 # Usage
 Python [get_libris_svenska_kyrkor.py](https://github.com/salgo60/SamlaLibris/blob/master/get_libris_svenska_kyrkor.py) --> [log](https://github.com/salgo60/SamlaLibris/tree/master/log)
