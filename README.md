@@ -1,7 +1,8 @@
 # SamlaLibris
 * Wikidata Phabricator Task [T215603](https://phabricator.wikimedia.org/T215603) *Connect WD Churches and church documentation at [RAÄ](http://samla.raa.se/xmlui/handle/raa/7)*
-* [Video](https://www.youtube.com/watch?v=6szCrwKdji0) in Swedish describes a linked solution as a reaction on [LIBRISXL tweet](https://twitter.com/LibrisNytt/status/1096353627097255936) "UX-design – att forma en användarupplevelse"
+* [Video](https://www.youtube.com/watch?v=6szCrwKdji0) in Swedish describes this linked solution where I extract 200 boks from LIBRIS and combines them with RAÄ and Wikidata. A small reaction on this tweet frm LIBRIS XL that I feel has no vision displayed in what is delivered <-> [LIBRISXL tweet](https://twitter.com/LibrisNytt/status/1096353627097255936) "UX-design – att forma en användarupplevelse"
 
+# POC Linked Books - what can be done in a day
 <img src="http://yuml.me/diagram/scruffy/class/[LIBRIS Svenska kyrkor]++book-1..&gt;[RAÄ Samla]++book-1..&gt;[RAÄ Samla]"/>
 <img src="http://yuml.me/diagram/scruffy/class/[UGC]-..&gt;book[RAÄ Samla]"/>
 <img src="http://yuml.me/diagram/scruffy/class/[UGC]-..&gt;Churches[Wikidata]"/>
