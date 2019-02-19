@@ -1,7 +1,7 @@
 # SamlaLibris
 <img src="http://yuml.me/diagram/scruffy/class/[LIBRIS Svenska kyrkor]++book-1..&gt;[RAÄ Samla]++book-1..&gt;[RAÄ Samla]"/>
-<img src="http://yuml.me/diagram/scruffy/class/[RAÄ Samla]book-..&gt;[UGC]..&gt;[UGC]"/>
-<img src="http://yuml.me/diagram/scruffy/class/[UGC]book-..&gt;Churches[Wikidata]"/>
+<img src="http://yuml.me/diagram/scruffy/class/[UGC]-..&gt;book[RAÄ Samla]"/>
+<img src="http://yuml.me/diagram/scruffy/class/[UGC]-..&gt;Churches[Wikidata]"/>
 
 Access LIBRIS and search for Svenska Kyrkor and extract items available from RAÄ Samla
 
