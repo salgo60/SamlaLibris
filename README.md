@@ -36,7 +36,7 @@ Python [get_libris_svenska_kyrkor.py](https://github.com/salgo60/SamlaLibris/blo
 ** RAÄ Samla [kulturarvsdata.se/raa/samla/6873](http://kulturarvsdata.se/raa/samla/html/6873)
 ** LIBRIS [19512784](http://libris.kb.se/bib/19512784)
 ## Errors
-* No formal error reporting is used att RAÄ UGC så I sent a tweet to Abbe that I have a WD categry with odd things [Category:P1260_Error](https://www.wikidata.org/wiki/Category:P1260_Error)
+* No formal error reporting is used att RAÄ UGC so I sent a tweet to Abbe that I have a WD category with odd things [Category:P1260_Error](https://www.wikidata.org/wiki/Category:P1260_Error) - I guess eiter I update WD or they do redrect feels like some [Link rot](https://en.wikipedia.org/wiki/Link_rot)
 
 # Links
 
