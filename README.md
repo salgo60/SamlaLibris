@@ -28,8 +28,11 @@ Python [get_libris_svenska_kyrkor.py](https://github.com/salgo60/SamlaLibris/blo
 * * example Wikidata objekt [Q61723424](https://www.wikidata.org/wiki/Q61723424) is RAÄ Samla [6880](http://samla.raa.se/xmlui/handle/raa/6880) - see also [What links here](https://www.wikidata.org/wiki/Special:WhatLinksHere/Q61723424)
 * * every book has one or more Main Topic [P921](https://www.wikidata.org/wiki/Property_talk:P921) that is the churches they describe
 * every church gets a described by [P1343](https://www.wikidata.org/wiki/Property_talk:P1343) linking back to the book
-## Maps
+## Wikidata queries
 * [Map with churches described by RAÄ](https://goo.gl/MZGLtg)
+* Linked data Graph of book [Riddarholmskyrkan](http://tinyurl.com/yyeoszcw) same as 
+** RAÄ Samla [kulturarvsdata.se/raa/samla/6873](http://kulturarvsdata.se/raa/samla/html/6873)
+** LIBRIS [19512784](http://libris.kb.se/bib/19512784)
 ## Errors
 * No formal error reporting is used att RAÄ UGC så I sent a tweet to Abbe that I have a WD categry with odd things [Category:P1260_Error](https://www.wikidata.org/wiki/Category:P1260_Error)
 
