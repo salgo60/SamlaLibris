@@ -1,6 +1,7 @@
 # SamlaLibris
 <img src="http://yuml.me/diagram/scruffy/class/[LIBRIS Svenska kyrkor]++book-1..&gt;[RAÄ Samla]++book-1..&gt;[RAÄ Samla]"/>
-<img src="http://yuml.me/diagram/scruffy/class/[RAÄ Samla]++book-..&gt;Churches[Wikidata]"/>
+<img src="http://yuml.me/diagram/scruffy/class/[RAÄ Samla]book-..&gt;[UGC]..&gt;[UGC]"/>
+<img src="http://yuml.me/diagram/scruffy/class/[UGC]book-..&gt;Churches[Wikidata]"/>
 
 Access LIBRIS and search for Svenska Kyrkor and extract items available from RAÄ Samla
 
@@ -22,8 +23,12 @@ Python [get_libris_svenska_kyrkor.py](https://github.com/salgo60/SamlaLibris/blo
  * [samlaWikidata.csv](https://github.com/salgo60/SamlaLibris/blob/master/samlaWikidata.csv)
    * contains UGC relations Samla <-> Wikidata
 
-# Wikidata (test)
-* Wikidata objekt [Q61723424](https://www.wikidata.org/wiki/Q61723424) is RAÄ Samla [6880](http://samla.raa.se/xmlui/handle/raa/6880) - see also [What links here](https://www.wikidata.org/wiki/Special:WhatLinksHere/Q61723424)
+# Wikidata
+* every book is an object in WD 
+* * example Wikidata objekt [Q61723424](https://www.wikidata.org/wiki/Q61723424) is RAÄ Samla [6880](http://samla.raa.se/xmlui/handle/raa/6880) - see also [What links here](https://www.wikidata.org/wiki/Special:WhatLinksHere/Q61723424)
+* * every book has one or more Main Topic [P921](https://www.wikidata.org/wiki/Property_talk:P921) that is the churches they describe
+* every church gets a described by [P1343](https://www.wikidata.org/wiki/Property_talk:P1343) linking back to the book
+
 
 # Links
 
