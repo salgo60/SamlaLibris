@@ -1,5 +1,6 @@
 # SamlaLibris
 * Wikidata Phabricator Task [T215603](https://phabricator.wikimedia.org/T215603) *Connect WD Churches and church documentation at [RAÄ](http://samla.raa.se/xmlui/handle/raa/7)*
+* [Video](https://www.youtube.com/watch?v=6szCrwKdji0) in Swedish describes a linked solution as a reaction on [LIBRISXL tweet](https://twitter.com/LibrisNytt/status/1096353627097255936)
 
 <img src="http://yuml.me/diagram/scruffy/class/[LIBRIS Svenska kyrkor]++book-1..&gt;[RAÄ Samla]++book-1..&gt;[RAÄ Samla]"/>
 <img src="http://yuml.me/diagram/scruffy/class/[UGC]-..&gt;book[RAÄ Samla]"/>
