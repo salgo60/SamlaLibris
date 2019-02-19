@@ -7,7 +7,7 @@ Access LIBRIS and search for Svenska Kyrkor and extract items available from RA�
 
  1) Search in LIBRIS is [ZSER:(Sveriges kyrkor)](http://libris.kb.se/xsearch?query=ZSER:(Sveriges%20kyrkor)&format=json&n=200)
 
- 1-1) Check if RAÄ SAMLA has references to Wikipedia/Wikidata
+ 1-1) Check if RAÄ SAMLA has references to Wikipedia/Wikidata using [UGC](https://www.raa.se/hitta-information/k-samsok/anvandargenererat-innehall-ugc-hubben/)
 
  1-2) export data
 
