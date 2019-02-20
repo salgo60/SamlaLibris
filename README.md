@@ -41,7 +41,10 @@ Python [get_libris_svenska_kyrkor.py](https://github.com/salgo60/SamlaLibris/blo
 ## Errors
 * See [salgo60/SamlaLibris/issues](https://github.com/salgo60/SamlaLibris/issues) and [Q61723424](https://www.wikidata.org/wiki/Q61723424)
   * No formal error reporting is used at RAÄ UGC so I sent a tweet to Abbe that I have a WD category with odd things [Category:P1260_Error](https://www.wikidata.org/wiki/Category:P1260_Error) - I guess either I update WD or they do redirect feels like some [Link rot](https://en.wikipedia.org/wiki/Link_rot)
-
+  * LIBRIS XL has a [discussion group](https://kundo.se/org/librisxl/posts/) that is answered but lack a change process that yu can follow
+    * you get no error id
+    * there is no public backlog
+    * you get no notification when something is in production you have to ask every 6 months in the discussion group example [status federated search](https://kundo.se/org/librisxl/d/federated-sparql-fragor-hur-gor-man-och-vad-behovs/#c3199001)
 # Links
 
 * Question LIBRIS XL about searching [link](https://kundo.se/org/librisxl/d/soka-fram-alla-kopplade-till-samlaraa-i-libris-xl/)
