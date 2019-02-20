@@ -44,7 +44,7 @@ Python [get_libris_svenska_kyrkor.py](https://github.com/salgo60/SamlaLibris/blo
     * Task Wikidata Phabricator Task [T215603](https://phabricator.wikimedia.org/T215603) and [workboard](https://phabricator.wikimedia.org/tag/wmse-riksarkivet-tora/)
     * [Category:P1260_Error](https://www.wikidata.org/wiki/Category:P1260_Error)
   * Github
-    * [salgo60/SamlaLibris/issues](https://github.com/salgo60/SamlaLibris/issues) and [Q61723424](https://www.wikidata.org/wiki/Q61723424)
+    * [salgo60/SamlaLibris/issues](https://github.com/salgo60/SamlaLibris/issues)
     * [Projectboard RAÄ/Samla](https://github.com/salgo60/SamlaLibris/projects/1)
 * RAÄ/UGC
    * No formal error reporting is used at RAÄ UGC so I sent a tweet to Abbe that I have a WD category with odd things [Category:P1260_Error](https://www.wikidata.org/wiki/Category:P1260_Error) - I guess either I update WD or they do redirect feels like some [Link rot](https://en.wikipedia.org/wiki/Link_rot)
