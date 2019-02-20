@@ -64,3 +64,7 @@ Python [get_libris_svenska_kyrkor.py](https://github.com/salgo60/SamlaLibris/blo
 * [UGC-hubben](https://www.raa.se/hitta-information/k-samsok/anvandargenererat-innehall-ugc-hubben/) (användargenererat innehåll)
 * [Sveriges kyrkor](http://samla.raa.se/xmlui/handle/raa/7) - [Riksantikvarieämbetes Samla](https://www.raa.se/hitta-information/publikationer/om-samla/)
 * [LIBRIS Xsearch](http://librishelp.libris.kb.se/help/xsearch_swe.jsp?open=tech)
+## Facebook anouncements about the map
+* [Släktforskning Semantisk Web](https://www.facebook.com/groups/345973895882090/permalink/552177558595055/)
+* [Epitafier](https://www.facebook.com/groups/448439408603556/permalink/2096873797093434/)
+* [Sveriges Släktforskarförbund](https://www.facebook.com/sverigesslaktforskarforbund/posts/1255156874623091?comment_id=1255734687898643)
