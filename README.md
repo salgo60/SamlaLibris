@@ -39,7 +39,8 @@ Python [get_libris_svenska_kyrkor.py](https://github.com/salgo60/SamlaLibris/blo
 * * LIBRIS [19512784](http://libris.kb.se/bib/19512784)
 * [Map - chuches near me documented by RAÄ](https://goo.gl/S62aAy)
 ## Errors
-* No formal error reporting is used at RAÄ UGC so I sent a tweet to Abbe that I have a WD category with odd things [Category:P1260_Error](https://www.wikidata.org/wiki/Category:P1260_Error) - I guess either I update WD or they do redirect feels like some [Link rot](https://en.wikipedia.org/wiki/Link_rot)
+* See [salgo60/SamlaLibris/issues](https://github.com/salgo60/SamlaLibris/issues) and [Q61723424](https://www.wikidata.org/wiki/Q61723424)
+** No formal error reporting is used at RAÄ UGC so I sent a tweet to Abbe that I have a WD category with odd things [Category:P1260_Error](https://www.wikidata.org/wiki/Category:P1260_Error) - I guess either I update WD or they do redirect feels like some [Link rot](https://en.wikipedia.org/wiki/Link_rot)
 
 # Links
 
