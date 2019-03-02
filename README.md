@@ -63,6 +63,7 @@ Python [get_libris_svenska_kyrkor.py](https://github.com/salgo60/SamlaLibris/blo
     * you get no notification when something is in production you have to ask every 6 months in the discussion group example [status federated search](https://kundo.se/org/librisxl/d/federated-sparql-fragor-hur-gor-man-och-vad-behovs/#c3199001)
 # Links
 
+* See if we can do this for indoor maps [T217470](https://phabricator.wikimedia.org/T217470)
 * Question LIBRIS XL about searching [link](https://kundo.se/org/librisxl/d/soka-fram-alla-kopplade-till-samlaraa-i-libris-xl/)
  * LIBRIS XL product owner [Anna Berggren](https://www.youtube.com/watch?v=N26nglSxhDk) reply 20190214
     * JSON API is just available for LIBRIS and **not** LIBRIS XL
