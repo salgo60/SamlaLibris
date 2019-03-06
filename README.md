@@ -42,7 +42,7 @@ Python [get_libris_svenska_kyrkor.py](https://github.com/salgo60/SamlaLibris/blo
   * RAÄ Samla [kulturarvsdata.se/raa/samla/6873](http://kulturarvsdata.se/raa/samla/html/6873)
   * LIBRIS [19512784](http://libris.kb.se/bib/19512784)
 * [Map - chuches near me documented by RAÄ](https://goo.gl/S62aAy)
-* [Start with a book about the Riddarholm church](http://tinyurl.com/y334xnvy) see [tweet](https://twitter.com/salgo60/status/1101089732564566018)
+* [Start with a book about the Riddarholm church](http://tinyurl.com/y334xnvy) see [tweet](https://twitter.com/salgo60/status/1101089732564566018) book [Wikidata Q61765464](https://www.wikidata.org/wiki/Q61765464)
 
 ![Book about the Riddarholm church](https://github.com/salgo60/SamlaLibris/blob/master/www/Book.png)
 
