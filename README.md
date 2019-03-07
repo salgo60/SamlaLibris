@@ -34,7 +34,7 @@ Python [get_libris_svenska_kyrkor.py](https://github.com/salgo60/SamlaLibris/blo
 # Wikidata
 * every book is an object in WD 
   * example Wikidata objekt [Q61723424](https://www.wikidata.org/wiki/Q61723424) is RAÄ Samla [6880](http://samla.raa.se/xmlui/handle/raa/6880) - see also [What links here](https://www.wikidata.org/wiki/Special:WhatLinksHere/Q61723424)
-  * every book has one or more Main Topic [P921](https://www.wikidata.org/wiki/Property_talk:P921) that is the churches they describe
+  * every book has one or more Main Topic [P921](https://www.wikidata.org/wiki/Property_talk:P921) that is the churches they describe or if a grave is described the buried person is linked
 * every church gets a described by [P1343](https://www.wikidata.org/wiki/Property_talk:P1343) linking back to the book
 ## Wikidata queries
 * [Map with churches described by RAÄ](https://goo.gl/UYCMXB)
