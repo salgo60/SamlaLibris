@@ -1,4 +1,11 @@
 # SamlaLibris
+A small test connecting books using [Open Linked Data](https://vimeo.com/36752317) ==> start adding values... Today we see a lot of initiativ but when we check [LIBRIS XL a book](https://libris.kb.se/katalogisering/zh9m10b93jhxc4x) is not linked and in [RAÄ a book](http://samla.raa.se/xmlui/handle/raa/6890) is linked to a church in Wikipedia but no good user interface exist... compare Wikidata [Q61765464](https://www.wikidata.org/wiki/Q61765464) for the same book that also links the book to people mentioned in the book....
+
+Are we getting Digital SILOS?
+
+![Book about the Riddarholm church](https://github.com/salgo60/SamlaLibris/blob/master/www/Book.png)
+
+
 * Wikidata Phabricator Task [T215603](https://phabricator.wikimedia.org/T215603) *Connect WD Churches and church documentation at [RAÄ](http://samla.raa.se/xmlui/handle/raa/7)*
 * [Video](https://www.youtube.com/watch?v=6szCrwKdji0) in Swedish describes this linked solution where I extract 200 books from LIBRIS and combines them with RAÄ and Wikidata. A small reaction on this tweet from LIBRIS XL that I feel has no Linked Data vision displayed in what is delivered <-> [LIBRISXL tweet](https://twitter.com/LibrisNytt/status/1096353627097255936) "UX-design – att forma en användarupplevelse"
 * [Map with the churches](https://goo.gl/Ftkd3F) that are documented in a RAÄ Book ([also links LIBRIS/LIBRIS XL](http://tinyurl.com/y4puqyxb))
