@@ -1,7 +1,7 @@
 # SamlaLibris
 A small test connecting books using [Open Linked Data](https://vimeo.com/36752317) ==> start adding values... Today we see a lot of initiativ but when we check [LIBRIS XL a book](https://libris.kb.se/katalogisering/zh9m10b93jhxc4x) is not linked and in [RAÄ a book](http://samla.raa.se/xmlui/handle/raa/6890) is linked to a church in Wikipedia but no good user interface exist... compare Wikidata [Q61765464](https://www.wikidata.org/wiki/Q61765464) for the same book that also links the book to people mentioned in the book....
 
-Are we getting Digital SILOS?
+Are we getting Digital RDF SILOS? In Sweden cultural people like Digisam has been speaking about Linked data since 2012 but I feel they miss a visio and dont have the righty skill matrix. This is a test what can be done if we move the UGC data to a modern platform with the prossibility to easier connect those books as sources for a grave....
 
 ![Book about the Riddarholm church](https://github.com/salgo60/SamlaLibris/blob/master/www/Book.png)
 
