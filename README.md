@@ -3,7 +3,7 @@ A small test connecting books using [Open Linked Data](https://vimeo.com/3675231
 
 ## Are we getting Digital RDF SILOS? 
 
-In Sweden cultural people like Digisam has been speaking about Linked data since 2012 but I feel they miss a vision and dont have the right skill matrix. This is a test what can be done if we move the UGC data to a modern platform with the possibilities to easier connect those books as sources for a grave.... we have the same problem with the National Library project LIBRISXL that also have the books in RDF but as Strings not things....
+In Sweden cultural people like Digisam has been speaking about Linked data since 2012 but I feel they miss a vision and dont have the right skill matrix. This is a test what can be done if we move the UGC data to a modern platform with the possibilities to easier connect those books as sources for a grave.... we have the same problem with the National Library project LIBRISXL that also have the books in RDF but as "Strings not things" see picture below were "Riksantikvarieämbetet" is a string and not an object like Wikidata [Q631844](https://w.wiki/Bas) i.e. [#METADATADEBT](https://twitter.com/salgo60/status/1188759411268997121?s=20)...
 
 
 Example how a book can be connected to people mentioned in the book on a modern platform like Wikidata with > [6800 properties](https://w.wiki/85n)
