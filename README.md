@@ -91,6 +91,7 @@ Python [get_libris_svenska_kyrkor.py](https://github.com/salgo60/SamlaLibris/blo
 * [Sveriges kyrkor](http://samla.raa.se/xmlui/handle/raa/7) - [Riksantikvarieämbetes Samla](https://www.raa.se/hitta-information/publikationer/om-samla/)
 * [LIBRIS Xsearch](http://librishelp.libris.kb.se/help/xsearch_swe.jsp?open=tech)
 * [Wikidata/Commons contribution strategies for GLAM organizations](https://media.ccc.de/v/wikidatacon2019-1077-wikidata_commons_contribution_strategies_for_glam_organizations) 
+* [Petscan query](http://petscan.wmflabs.org/?psid=13670058) find people in Wikipedia category [Kategori:Gravsatta_i_Riddarholmskyrkan](https://sv.wikipedia.org/wiki/Kategori:Gravsatta_i_Riddarholmskyrkan) and not source [wd:Q61765464](https://www.wikidata.org/wiki/Q61765464)
 ### My Facebook anouncements about the map
 * [Släktforskning Semantisk Web](https://www.facebook.com/groups/345973895882090/permalink/552177558595055/)
 * [Epitafier](https://www.facebook.com/groups/448439408603556/permalink/2096873797093434/)
