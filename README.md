@@ -96,3 +96,7 @@ Python [get_libris_svenska_kyrkor.py](https://github.com/salgo60/SamlaLibris/blo
 * [Släktforskning Semantisk Web](https://www.facebook.com/groups/345973895882090/permalink/552177558595055/)
 * [Epitafier](https://www.facebook.com/groups/448439408603556/permalink/2096873797093434/)
 * [Sveriges Släktforskarförbund](https://www.facebook.com/sverigesslaktforskarforbund/posts/1255156874623091?comment_id=1255734687898643)
+
+## Svenskt Kyrkogårdprojekt
+Ett försök att få kopplingar våra kyrkogprdar med kyrka, flygbilder, Find A Grave, Släktforskarförbundet se [github:salgo60/Gravstensinventeringen-Wikidata](https://github.com/salgo60/Gravstensinventeringen-Wikidata)
+
