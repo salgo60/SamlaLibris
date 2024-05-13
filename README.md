@@ -1,5 +1,7 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.11183812.svg)](https://doi.org/10.5281/zenodo.11183812)
 
+* [RAÄ Skuggbacklog](https://github.com/salgo60/SamlaLibris/issues/10)
+
 # SamlaLibris
 A small test [POC](https://en.wikipedia.org/wiki/Proof_of_concept) connecting books using [Open Linked Data](https://vimeo.com/36752317) ==> start adding values... Today we see a lot of initiatives but when we check [LIBRIS XL a book](https://libris.kb.se/katalogisering/zh9m10b93jhxc4x) it is not linked and in [RAÄ a book](http://samla.raa.se/xmlui/handle/raa/6890) it is linked to a church in Wikipedia but no good user interface exist and its just a link or one link per object... compare Wikidata [Q61765464](https://www.wikidata.org/wiki/Q61765464) for the same book that also links the book to people mentioned in the book....
 
