@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>External Link Health Study – RAA (Sample)</title>
+<style>
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    margin: 2rem;
+    line-height: 1.5;
+}
+h1, h2, h3 {
+    font-weight: 600;
+}
+.table {
+    border-collapse: collapse;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+}
+.table th, .table td {
+    border: 1px solid #ccc;
+    padding: 0.3rem 0.5rem;
+}
+.table thead {
+    background: #f2f2f2;
+}
+code {
+    background: #f5f5f5;
+    padding: 0.1rem 0.3rem;
+    border-radius: 3px;
+}
+small {
+    color: #666;
+}
+</style>
+</head>
+<body>
+
+<h1>External Link Health Study – RAA (Sample)</h1>
+<p><strong>Last updated:</strong> 2025-12-01</p>
+<p>This is a <strong>pilot measurement</strong> based on 300 sampled links from the full dataset.</p>
+
+<h2>Scope and method</h2>
+<p>
+This page reports HTTP availability of external links used in Wikipedia,
+with a focus on links to Riksantikvarieämbetet and related domains.
+It measures <em>technical accessibility</em> of URLs, not the quality of
+their content.
+</p>
+
+<h2>Summary</h2>
+<ul>
+  <li><strong>Total links measured:</strong> 300</li>
+  <li><strong>Broken links:</strong> 27 (9.0%)</li>
+  <li><strong>Legacy DSpace (XMLUI) links:</strong> 2</li>
+</ul>
+
+<h2>Broken links by Wikipedia (Top 15)</h2>
+<table border="1" class="dataframe table table-sm">
+  <thead>
+    <tr style="text-align: left;">
+      <th></th>
+      <th>links_total</th>
+      <th>broken_links</th>
+      <th>legacy_dspace</th>
+      <th>broken_pct</th>
+    </tr>
+    <tr>
+      <th>wiki</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+
+<h2>Broken links by content language (Top 15)</h2>
+<table border="1" class="dataframe table table-sm">
+  <thead>
+    <tr style="text-align: left;">
+      <th></th>
+      <th></th>
+      <th>links</th>
+      <th>broken</th>
+      <th>broken_pct</th>
+    </tr>
+    <tr>
+      <th>lang_code</th>
+      <th>lang_name</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>nn</th>
+      <th>norsk nynorsk</th>
+      <td>12</td>
+      <td>12</td>
+      <td>100.00</td>
+    </tr>
+    <tr>
+      <th>da</th>
+      <th>dansk</th>
+      <td>10</td>
+      <td>10</td>
+      <td>100.00</td>
+    </tr>
+    <tr>
+      <th>zh</th>
+      <th>中文</th>
+      <td>14</td>
+      <td>1</td>
+      <td>7.14</td>
+    </tr>
+    <tr>
+      <th>sv</th>
+      <th>svenska</th>
+      <td>78</td>
+      <td>1</td>
+      <td>1.28</td>
+    </tr>
+    <tr>
+      <th>cdo</th>
+      <th>閩東語 / Mìng-dĕ̤ng-ngṳ̄</th>
+      <td>1</td>
+      <td>1</td>
+      <td>100.00</td>
+    </tr>
+    <tr>
+      <th>pl</th>
+      <th>polski</th>
+      <td>2</td>
+      <td>1</td>
+      <td>50.00</td>
+    </tr>
+    <tr>
+      <th>no</th>
+      <th>norsk</th>
+      <td>34</td>
+      <td>1</td>
+      <td>2.94</td>
+    </tr>
+    <tr>
+      <th>ilo</th>
+      <th>Ilokano</th>
+      <td>1</td>
+      <td>0</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>vi</th>
+      <th>Tiếng Việt</th>
+      <td>3</td>
+      <td>0</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>ro</th>
+      <th>română</th>
+      <td>3</td>
+      <td>0</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>nl</th>
+      <th>Nederlands</th>
+      <td>5</td>
+      <td>0</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>lb</th>
+      <th>Lëtzebuergesch</th>
+      <td>2</td>
+      <td>0</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>ja</th>
+      <th>日本語</th>
+      <td>16</td>
+      <td>0</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>af</th>
+      <th>Afrikaans</th>
+      <td>4</td>
+      <td>0</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>an</th>
+      <th>aragonés</th>
+      <td>1</td>
+      <td>0</td>
+      <td>0.00</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Link rot over time (year heuristic)</h2>
+<table border="1" class="dataframe table table-sm">
+  <thead>
+    <tr style="text-align: left;">
+      <th></th>
+      <th>links</th>
+      <th>broken</th>
+      <th>legacy</th>
+      <th>broken_pct</th>
+    </tr>
+    <tr>
+      <th>year</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1907</th>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>1927</th>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>1938</th>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>100.0</td>
+    </tr>
+    <tr>
+      <th>1944</th>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>1977</th>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>1979</th>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>2000</th>
+      <td>3</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>2004</th>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>2008</th>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>2016</th>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>100.0</td>
+    </tr>
+    <tr>
+      <th>2026</th>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>2034</th>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>2055</th>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>2062</th>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>2095</th>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>100.0</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Domains showing blocking or throttling (sample-based)</h2>
+<p>No clearly blocked domains in this sample.</p>
+
+<h2>Sample links needing manual repair</h2>
+<p>
+These are broken legacy DSpace XMLUI links where a search hint against
+<code>samla.raa.se</code> can help find a replacement.
+</p>
+<table border="1" class="dataframe table table-sm">
+  <thead>
+    <tr style="text-align: left;">
+      <th>Wikipedia-sida</th>
+      <th>Extern länk</th>
+      <th>repair_reason</th>
+      <th>migration_hint</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="Katedra w Västerås">Katedra w Västerås</a></td>
+      <td><a href="http://samla.raa.se/xmlui/bitstream/handle/raa/1188/1938_129.pdf?sequence=1&isAllowed=y">http://samla.raa.se/xmlui/bitstream/handle/raa/1188/1938_129.pdf?sequence=1&isAllowed=y</a></td>
+      <td>RAA DSpace XMLUI migration</td>
+      <td><a href="https://samla.raa.se/discover?query=1938_129.pdf%3Fsequence%3D1%26isAllowed%3Dy">https://samla.raa.se/discover?query=1938_129.pdf%3Fsequence%3D1%26isAllowed%3Dy</a></td>
+    </tr>
+    <tr>
+      <td><a href="Rökstenen">Rökstenen</a></td>
+      <td><a href="http://samla.raa.se/xmlui/bitstream/handle/raa/243/9789172095991.pdf?sequence=1&isAllowed=y">http://samla.raa.se/xmlui/bitstream/handle/raa/243/9789172095991.pdf?sequence=1&isAllowed=y</a></td>
+      <td>RAA DSpace XMLUI migration</td>
+      <td><a href="https://samla.raa.se/discover?query=9789172095991.pdf%3Fsequence%3D1%26isAllowed%3Dy">https://samla.raa.se/discover?query=9789172095991.pdf%3Fsequence%3D1%26isAllowed%3Dy</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><small>
+Full sample CSV for this run:
+<code>results/links_needing_manual_repair_sample.csv</code><br>
+Domain diagnostics:
+<code>results/domain_health_sample.csv</code>
+</small></p>
+
+</body>
+</html>

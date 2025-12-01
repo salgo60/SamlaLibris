@@ -1,0 +1,9 @@
+domain,checks,ok,timeouts,conn_errors,mean_latency,problem_ratio
+app.raa.se,25,24,1,0,0.092018625,0.04
+bebyggelseregistret.raa.se,9,9,0,0,0.12364599999999999,0.0
+kulturnav.org,231,195,0,0,0.3676584372294372,0.0
+samla.raa.se,3,1,0,0,0.236633,0.0
+www.bebyggelseregistret.raa.se,14,14,0,0,0.15531042857142857,0.0
+www.fmis.raa.se,5,4,0,0,0.0812838,0.0
+www.kringla.nu,3,3,0,0,0.16921866666666666,0.0
+www.raa.se,10,6,0,0,0.1753092,0.0
