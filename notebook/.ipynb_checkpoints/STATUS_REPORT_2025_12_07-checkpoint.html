@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>External Link Health Study – RAA (Sample)</title>
+<style>
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    margin: 2rem;
+    line-height: 1.5;
+}
+h1, h2, h3 {
+    font-weight: 600;
+}
+.table {
+    border-collapse: collapse;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+}
+.table th, .table td {
+    border: 1px solid #ccc;
+    padding: 0.3rem 0.5rem;
+}
+.table thead {
+    background: #f2f2f2;
+}
+code {
+    background: #f5f5f5;
+    padding: 0.1rem 0.3rem;
+    border-radius: 3px;
+}
+small {
+    color: #666;
+}
+</style>
+</head>
+<body>
+
+<h1>External Link Health Study – RAA (Sample)</h1>
+<p><strong>Last updated:</strong> 2025-12-07</p>
+<p>This measurement covers the full dataset.</p>
+
+<h2>Scope and method</h2>
+<p>
+This page reports HTTP availability of external links used in Wikipedia,
+with a focus on links to Riksantikvarieämbetet and related domains.
+It measures <em>technical accessibility</em> of URLs, not the quality of
+their content.
+</p>
+
+<h2>Summary</h2>
+<ul>
+  <li><strong>Total links measured:</strong> 305,250</li>
+  <li><strong>Broken links:</strong> 11,001 (3.6%)</li>
+  <li><strong>Legacy DSpace (XMLUI) links:</strong> 638</li>
+</ul>
+
+<h2>Broken links by Wikipedia (Top 15)</h2>
+<table border="1" class="dataframe table table-sm">
+  <thead>
+    <tr style="text-align: left;">
+      <th></th>
+      <th>links_total</th>
+      <th>broken_links</th>
+      <th>legacy_dspace</th>
+      <th>broken_pct</th>
+    </tr>
+    <tr>
+      <th>wiki</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+
+<h2>Broken links by content language (Top 15)</h2>
+<table border="1" class="dataframe table table-sm">
+  <thead>
+    <tr style="text-align: left;">
+      <th></th>
+      <th></th>
+      <th>links</th>
+      <th>broken</th>
+      <th>broken_pct</th>
+    </tr>
+    <tr>
+      <th>lang_code</th>
+      <th>lang_name</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>da</th>
+      <th>dansk</th>
+      <td>16022</td>
+      <td>4390</td>
+      <td>27.40</td>
+    </tr>
+    <tr>
+      <th>nn</th>
+      <th>norsk nynorsk</th>
+      <td>3150</td>
+      <td>3117</td>
+      <td>98.95</td>
+    </tr>
+    <tr>
+      <th>es</th>
+      <th>español</th>
+      <td>9396</td>
+      <td>901</td>
+      <td>9.59</td>
+    </tr>
+    <tr>
+      <th>sv</th>
+      <th>svenska</th>
+      <td>196969</td>
+      <td>481</td>
+      <td>0.24</td>
+    </tr>
+    <tr>
+      <th>hak</th>
+      <th>客家語 / Hak-kâ-ngî</th>
+      <td>331</td>
+      <td>329</td>
+      <td>99.40</td>
+    </tr>
+    <tr>
+      <th>cdo</th>
+      <th>閩東語 / Mìng-dĕ̤ng-ngṳ̄</th>
+      <td>304</td>
+      <td>302</td>
+      <td>99.34</td>
+    </tr>
+    <tr>
+      <th>eu</th>
+      <th>euskara</th>
+      <td>4078</td>
+      <td>273</td>
+      <td>6.69</td>
+    </tr>
+    <tr>
+      <th>en</th>
+      <th>English</th>
+      <td>19154</td>
+      <td>236</td>
+      <td>1.23</td>
+    </tr>
+    <tr>
+      <th>ast</th>
+      <th>asturianu</th>
+      <td>1394</td>
+      <td>129</td>
+      <td>9.25</td>
+    </tr>
+    <tr>
+      <th>de</th>
+      <th>Deutsch</th>
+      <td>13839</td>
+      <td>122</td>
+      <td>0.88</td>
+    </tr>
+    <tr>
+      <th>an</th>
+      <th>aragonés</th>
+      <td>1097</td>
+      <td>69</td>
+      <td>6.29</td>
+    </tr>
+    <tr>
+      <th>it</th>
+      <th>italiano</th>
+      <td>126</td>
+      <td>63</td>
+      <td>50.00</td>
+    </tr>
+    <tr>
+      <th>no</th>
+      <th>norsk</th>
+      <td>11452</td>
+      <td>54</td>
+      <td>0.47</td>
+    </tr>
+    <tr>
+      <th>fi</th>
+      <th>suomi</th>
+      <td>6242</td>
+      <td>52</td>
+      <td>0.83</td>
+    </tr>
+    <tr>
+      <th>ja</th>
+      <th>日本語</th>
+      <td>4308</td>
+      <td>16</td>
+      <td>0.37</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Link rot over time (year heuristic)</h2>
+<table border="1" class="dataframe table table-sm">
+  <thead>
+    <tr style="text-align: left;">
+      <th></th>
+      <th>links</th>
+      <th>broken</th>
+      <th>legacy</th>
+      <th>broken_pct</th>
+    </tr>
+    <tr>
+      <th>year</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2080</th>
+      <td>403</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0.25</td>
+    </tr>
+    <tr>
+      <th>2081</th>
+      <td>129</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0.78</td>
+    </tr>
+    <tr>
+      <th>2082</th>
+      <td>99</td>
+      <td>5</td>
+      <td>0</td>
+      <td>5.05</td>
+    </tr>
+    <tr>
+      <th>2083</th>
+      <td>34</td>
+      <td>5</td>
+      <td>0</td>
+      <td>14.71</td>
+    </tr>
+    <tr>
+      <th>2084</th>
+      <td>143</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0.70</td>
+    </tr>
+    <tr>
+      <th>2085</th>
+      <td>86</td>
+      <td>2</td>
+      <td>0</td>
+      <td>2.33</td>
+    </tr>
+    <tr>
+      <th>2086</th>
+      <td>159</td>
+      <td>3</td>
+      <td>0</td>
+      <td>1.89</td>
+    </tr>
+    <tr>
+      <th>2087</th>
+      <td>31</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>2088</th>
+      <td>105</td>
+      <td>3</td>
+      <td>0</td>
+      <td>2.86</td>
+    </tr>
+    <tr>
+      <th>2089</th>
+      <td>83</td>
+      <td>2</td>
+      <td>0</td>
+      <td>2.41</td>
+    </tr>
+    <tr>
+      <th>2090</th>
+      <td>825</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0.24</td>
+    </tr>
+    <tr>
+      <th>2091</th>
+      <td>129</td>
+      <td>4</td>
+      <td>0</td>
+      <td>3.10</td>
+    </tr>
+    <tr>
+      <th>2092</th>
+      <td>58</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>2093</th>
+      <td>125</td>
+      <td>2</td>
+      <td>1</td>
+      <td>1.60</td>
+    </tr>
+    <tr>
+      <th>2094</th>
+      <td>45</td>
+      <td>1</td>
+      <td>0</td>
+      <td>2.22</td>
+    </tr>
+    <tr>
+      <th>2095</th>
+      <td>84</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1.19</td>
+    </tr>
+    <tr>
+      <th>2096</th>
+      <td>42</td>
+      <td>3</td>
+      <td>1</td>
+      <td>7.14</td>
+    </tr>
+    <tr>
+      <th>2097</th>
+      <td>64</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>2098</th>
+      <td>47</td>
+      <td>5</td>
+      <td>0</td>
+      <td>10.64</td>
+    </tr>
+    <tr>
+      <th>2099</th>
+      <td>24</td>
+      <td>1</td>
+      <td>0</td>
+      <td>4.17</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Domains showing blocking or throttling (sample-based)</h2>
+<table border="1" class="dataframe table table-sm">
+  <thead>
+    <tr style="text-align: left;">
+      <th></th>
+      <th>checks</th>
+      <th>ok</th>
+      <th>timeouts</th>
+      <th>conn_errors</th>
+      <th>mean_latency</th>
+      <th>problem_ratio</th>
+    </tr>
+    <tr>
+      <th>domain</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>hildebrand.raa.se</th>
+      <td>24</td>
+      <td>0</td>
+      <td>0</td>
+      <td>24</td>
+      <td>NaN</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>www.digisam.se</th>
+      <td>41</td>
+      <td>0</td>
+      <td>0</td>
+      <td>41</td>
+      <td>NaN</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>www.kms.raa.se</th>
+      <td>108</td>
+      <td>0</td>
+      <td>0</td>
+      <td>108</td>
+      <td>NaN</td>
+      <td>1.0</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<p><small>
+Full sample CSV for this run:
+<code>results/links_needing_manual_repair_sample.csv</code><br>
+Domain diagnostics:
+<code>results/domain_health_sample.csv</code>
+</small></p>
+
+</body>
+</html>
